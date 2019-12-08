@@ -6,20 +6,17 @@
       <%= render "devise/shared/error_messages", resource: resource %>
 
       <div class="mb-3">
-        <%= f.label :email %><br />
+        <%= f.label :email, class: 'block mb-2 font-bold' %>
         <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'bg-gray-100 focus:bg-white focus:outline-none focus:border-orange-600 border-2 border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal' %>
       </div>
 
       <div class="mb-3">
-        <%= f.label :password %>
-        <% if @minimum_password_length %>
-        <em>(<%= @minimum_password_length %> characters minimum)</em>
-        <% end %><br />
+        <%= f.label :password, class: 'block mb-2 font-bold' %>
         <%= f.password_field :password, autocomplete: "new-password", class: 'bg-gray-100 focus:bg-white focus:outline-none focus:border-orange-600 border-2 border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal' %>
       </div>
 
       <div class="mb-3">
-        <%= f.label :password_confirmation %><br />
+        <%= f.label :password_confirmation, class: 'block mb-2 font-bold' %>
         <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'bg-gray-100 focus:bg-white focus:outline-none focus:border-orange-600 border-2 border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal' %>
       </div>
 
