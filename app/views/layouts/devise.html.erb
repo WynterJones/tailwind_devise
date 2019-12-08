@@ -18,7 +18,16 @@
       <p>Copyright 2020 &copy; All Rights Reserved</p>
     </footer>
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% if notice.present? %>
+      <div class="fixed right-0 top-0 bg-green-900 rounded-bl text-white p-3 px-6 text-lg">
+        <%= notice %>
+      </div>
+    <% end %>
+
+    <% if alert.present? %>
+      <div class="fixed right-0 top-0 bg-red-600 rounded-bl text-white p-3 px-6 text-lg">
+        <%= alert %>
+      </div>
+    <% end %>
   </body>
 </html>
