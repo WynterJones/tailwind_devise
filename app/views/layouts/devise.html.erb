@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Login</title>
+    <%= display_meta_tags separator: "&mdash;".html_safe %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -13,6 +13,10 @@
 
   <body class="devise text-white text-blue-200">
     <%= yield %>
+
+    <footer class="container mx-auto text-center text-sm pt-3">
+      <p>Copyright 2020 &copy; All Rights Reserved</p>
+    </footer>
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>

@@ -25,3 +25,7 @@ body {
   max-width: 420px;
   margin-top: 200px
 }
+
+footer.container {
+  margin-top: 0
+}
