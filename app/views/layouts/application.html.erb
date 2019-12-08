@@ -12,9 +12,10 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container mx-auto">
+      <%= yield %>
+    </div>
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% render 'shared/notices' %>
   </body>
 </html>
