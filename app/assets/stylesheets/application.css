@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.devise {
+  background: #2d97d2
+}
+
+.container {
+  max-width: 420px;
+  margin-top: 200px
+}
